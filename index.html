@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Ese Sentido</title>
+</head>
+
+<body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+    <script type="text/javascript">
+        if (annyang) {
+            let contador = 0;
+            // Let's define our first command. First the text we expect, and then the function it should call
+            var commands = {
+                'hola': function () {
+                    contador++;
+                    alert("hola");
+                }
+            };
+
+            // Add our commands to annyang
+            annyang.addCommands(commands);
+            annyang.setLanguage("es-AR");
+
+
+            // Start listening. You can call this here, or attach this call to an event, button, etc.
+            annyang.start();
+        }
+        
+   
+    </script>
+    
+
+</body>
+
+</html>
